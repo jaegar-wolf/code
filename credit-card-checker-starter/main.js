@@ -116,8 +116,9 @@ const createArrayOfCard = (string) => {
     return newCard;
 }
 
-console.log(createArrayOfCard('371612019985236'))
-console.log(validateCred(createArrayOfCard('371612019985236')));
+const newCard = createArrayOfCard('371612019985236');
+console.log(newCard);
+console.log(validateCred(createArrayOfCard(newCard)));
 console.log(invalidCardCompany(findInvalidCard(batch)));
 
 
